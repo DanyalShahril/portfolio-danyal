@@ -1,9 +1,17 @@
-<footer class="footer">
-    <div class="container">
-        <p>© <?php echo date("Y"); ?> Danyal Shahril | Selangor, Malaysia</p>
-        <button onclick="scrollToTop()" class="back-top">↑</button>
+<header class="header">
+    <div class="container nav">
+        <div class="logo">Danyal Shahril</div>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
     </div>
-</footer>
+</header>
 
 <script src="assets/js/main.js"></script>
 </body>
@@ -68,3 +76,4 @@
         <button onclick="scrollToTop()" class="back-top">↑</button>
     </div>
 </footer>
+
