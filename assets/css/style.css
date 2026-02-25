@@ -114,6 +114,25 @@ nav a:hover::after {
   color: var(--primary);
 }
 
+nav a.active {
+  color: var(--primary);
+}
+
+nav a.active::after {
+  width: 100%;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ================= HERO ================= */
 .hero {
   min-height: 100vh;
@@ -277,4 +296,5 @@ nav a:hover::after {
   }
 
 }
+
 
