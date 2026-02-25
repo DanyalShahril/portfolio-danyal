@@ -55,13 +55,15 @@ body::before {
 
 /* ================= HEADER ================= */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #0f172a; /* match your theme */
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  z-index: 1000;
+  transition: 0.3s ease;
 }
 
 .nav {
@@ -275,3 +277,4 @@ nav a:hover::after {
   }
 
 }
+
