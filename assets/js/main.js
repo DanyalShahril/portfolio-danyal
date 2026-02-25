@@ -1,5 +1,6 @@
-// main.js
-function toggleMenu() {
-  const nav = document.getElementById('navMenu');
-  nav.classList.toggle('active');
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
