@@ -295,6 +295,46 @@ nav a.active::after {
     display: block;
   }
 
+   .about-profile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
+
+.profile-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid #00f0ff;
+  box-shadow: 0 0 20px #00f0ff80;
+  transition: 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00f0ff;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-details {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.profile-details li {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+}
+
 
 
