@@ -294,6 +294,7 @@ nav a.active::after {
   .hamburger {
     display: block;
   }
+}
 
    .about-profile {
   display: flex;
@@ -331,6 +332,7 @@ nav a.active::after {
   margin-bottom: 8px;
   color: #ccc;
 }
+
 
 
 
