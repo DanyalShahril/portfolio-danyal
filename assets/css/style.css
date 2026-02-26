@@ -39,7 +39,7 @@ body::before {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
   background-size: 40px 40px;
@@ -60,10 +60,8 @@ body::before {
   width: 100%;
   background: rgba(15, 23, 42, 0.75);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.05);
   z-index: 1000;
-  transition: 0.3s ease;
 }
 
 .nav {
@@ -88,7 +86,8 @@ nav a {
   transition: 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: var(--primary);
 }
 
@@ -103,7 +102,8 @@ nav a::after {
   transition: 0.3s ease;
 }
 
-nav a:hover::after {
+nav a:hover::after,
+nav a.active::after {
   width: 100%;
 }
 
@@ -112,25 +112,6 @@ nav a:hover::after {
   font-size: 24px;
   cursor: pointer;
   color: var(--primary);
-}
-
-nav a.active {
-  color: var(--primary);
-}
-
-nav a.active::after {
-  width: 100%;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s ease;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* ================= HERO ================= */
@@ -144,7 +125,6 @@ nav a.active::after {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
   line-height: 1.1;
 }
@@ -182,7 +162,6 @@ nav a.active::after {
 /* ================= SECTION ================= */
 .section {
   padding: 120px 0;
-  margin-top: 80px;
 }
 
 .section h1,
@@ -190,6 +169,48 @@ nav a.active::after {
   margin-bottom: 20px;
   font-size: 2rem;
   color: var(--primary);
+}
+
+/* ================= ABOUT PROFILE ================= */
+.about-profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-image img {
+  width: 80px !important;
+  height: 80px !important;
+  max-width: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--primary);
+  display: block;
+  box-shadow: 0 0 15px rgba(0,245,255,0.3);
+  transition: 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,245,255,0.7);
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-details {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.profile-details li {
+  margin-bottom: 8px;
+  color: var(--muted);
 }
 
 /* ================= SKILLS ================= */
@@ -231,14 +252,6 @@ nav a.active::after {
   box-shadow: 0 0 30px rgba(0,245,255,0.2);
 }
 
-.project-card h3 {
-  margin-bottom: 10px;
-}
-
-.project-card p {
-  color: var(--muted);
-}
-
 /* ================= CONTACT ================= */
 .contact-form input,
 .contact-form textarea {
@@ -249,7 +262,6 @@ nav a.active::after {
   border: 1px solid rgba(255,255,255,0.08);
   background: var(--panel);
   color: var(--text);
-  transition: 0.3s ease;
 }
 
 .contact-form input:focus,
@@ -263,7 +275,6 @@ nav a.active::after {
 .footer {
   text-align: center;
   padding: 40px 0;
-  margin-top: 80px;
   border-top: 1px solid rgba(255,255,255,0.05);
   color: var(--muted);
 }
@@ -294,52 +305,9 @@ nav a.active::after {
   .hamburger {
     display: block;
   }
+
+  .about-profile {
+    flex-direction: column;
+    text-align: center;
+  }
 }
-
-   .about-profile {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.profile-image img {
-  width: 60px;       /* smaller size */
-  height: 60px;
-  object-fit: cover;
-  border-radius: 12px;  /* slightly rounded */
-  border: 1px solid #ccc;  /* simple clean border */
-}
-
-.profile-image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px #00f0ff;
-}
-
-.profile-info {
-  flex: 1;
-  min-width: 250px;
-}
-
-.profile-details {
-  margin-top: 15px;
-  list-style: none;
-  padding: 0;
-}
-
-.profile-details li {
-  margin-bottom: 8px;
-  color: #ccc;
-}
-
-
-
-
-
-
-
-
-
-
-
