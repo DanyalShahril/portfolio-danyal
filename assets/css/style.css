@@ -181,9 +181,9 @@ nav a.active::after {
 }
 
 .profile-image img {
-  width: 80px !important;
-  height: 80px !important;
-  max-width: 80px;
+  width: 180px !important;
+  height: 180px !important;
+  max-width: 180px;
   object-fit: cover;
   border-radius: 12px;
   border: 2px solid var(--primary);
@@ -311,3 +311,4 @@ nav a.active::after {
     text-align: center;
   }
 }
+
