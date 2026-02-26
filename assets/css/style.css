@@ -314,7 +314,7 @@ nav a.active::after {
 }
 
 .profile-image img:hover {
-  transform: scale(1.05);
+  transform: scale(.025);
   box-shadow: 0 0 30px #00f0ff;
 }
 
@@ -335,6 +335,7 @@ nav a.active::after {
 }
 
 }
+
 
 
 
