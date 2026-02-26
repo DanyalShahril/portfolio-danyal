@@ -304,8 +304,8 @@ nav a.active::after {
 }
 
 .profile-image img {
-  width: 160px;       /* smaller size */
-  height: 160px;
+  width: 60px;       /* smaller size */
+  height: 60px;
   object-fit: cover;
   border-radius: 12px;  /* slightly rounded */
   border: 1px solid #ccc;  /* simple clean border */
@@ -333,6 +333,7 @@ nav a.active::after {
 }
 
 }
+
 
 
 
