@@ -304,17 +304,15 @@ nav a.active::after {
 }
 
 .profile-image img {
-  width: 20px;
-  height: 20px;
+  width: 160px;       /* smaller size */
+  height: 160px;
   object-fit: cover;
-  border-radius: 20px;
-  border: 3px solid #00f0ff;
-  box-shadow: 0 0 20px #00f0ff80;
-  transition: 0.3s ease;
+  border-radius: 12px;  /* slightly rounded */
+  border: 1px solid #ccc;  /* simple clean border */
 }
 
 .profile-image img:hover {
-  transform: scale(.025);
+  transform: scale(1.05);
   box-shadow: 0 0 30px #00f0ff;
 }
 
@@ -335,6 +333,7 @@ nav a.active::after {
 }
 
 }
+
 
 
 
